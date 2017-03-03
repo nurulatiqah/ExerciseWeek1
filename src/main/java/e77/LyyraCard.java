@@ -4,26 +4,35 @@ package e77;
  * @author nurulatiqahali
  *
  */
-public class E77multiplecard {
+public class LyyraCard {
 	double balance;
 	double dec = 2.50;
 	double decG = 4.00;
 
-	public E77multiplecard(double balanceAtStart) {
+	public LyyraCard(double balanceAtStart) {
 		balance = balanceAtStart;
 	}
 
 	public void payGourmet() {
-		balance = balance - decG;
+		 if(balance>=decG){
+				balance-=decG;
+			}
 	}
 
 	public void payEconomical() {
-		balance = balance - dec;
+		 if(balance>=dec){
+			balance-=dec;
+		}
 
 	}
 
 	public void loadMoney(int amount) {
-		balance = balance + amount;
+		if (amount > 0) {
+            balance += amount;
+            if (balance > 150) {//maximum balance on a card is 150 euros
+                balance = 150;
+            }
+        }		
 	}
 
 	public String toString() {

@@ -3,10 +3,10 @@ package e75;
  * @author nurulatiqahali
  *
  */
-public class E75DecreasingCounter {
+public class DecreasingCounter {
 	private int value;
 
-	public E75DecreasingCounter(int valueAtStart) {
+	public DecreasingCounter(int valueAtStart) {
 		value = valueAtStart;
 
 	}
@@ -18,16 +18,15 @@ public class E75DecreasingCounter {
 
 	public void decrease() {
 
-		// 75.1 value--;
 
 		if (value > 0) {
 			value--;
 		} else
 			value = 0;
-	} // 75.3
+	}
 
 	public void reset() {
-		value = 0; // 75.3
+		value = 0; 
 	}
 
 	public void setInitial() {

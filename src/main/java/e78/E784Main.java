@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class E784Main {
 	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
-		E784BoundedCounter seconds = new E784BoundedCounter(59);
-		E784BoundedCounter minutes = new E784BoundedCounter(59);
-		E784BoundedCounter hours = new E784BoundedCounter(23);
+		BoundedCounter seconds = new BoundedCounter(59);
+		BoundedCounter minutes = new BoundedCounter(59);
+		BoundedCounter hours = new BoundedCounter(23);
 
 		System.out.print("seconds: ");
 		int s = scanner.nextInt();

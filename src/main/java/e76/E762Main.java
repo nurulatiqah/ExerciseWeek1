@@ -2,9 +2,9 @@ package e76;
 
 /**
  * @author nurulatiqahali
- *
+ * For 76.2 and 76.3 
  */
-public class E76Main {
+public class E762Main {
 	public static void main(String[] args) {
 
 		PrintMeal menu = new PrintMeal();
@@ -12,8 +12,8 @@ public class E76Main {
 		menu.addMeal("Sauerkraut");
 		menu.addMeal("Sauerkraut");
 		menu.addMeal("Fish n chip");
-		// menu.clearMenu();
-		
+		menu.clearMenu(); //clear menu
+		menu.printMeals();
 
 	}
 

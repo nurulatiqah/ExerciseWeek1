@@ -4,10 +4,10 @@ package e77;
  * @author nurulatiqahali
  *
  */
-public class E77multiplemain {
+public class E776multiplemain {
 	public static void main(String[] args) {
-	        E77multiplecard cardPekka = new E77multiplecard(20);
-	        E77multiplecard cardBrian = new E77multiplecard(30);
+	        LyyraCard cardPekka = new LyyraCard(20);
+	        LyyraCard cardBrian = new LyyraCard(30);
 	        
 	        cardPekka.payGourmet();
 	        System.out.println(cardPekka);

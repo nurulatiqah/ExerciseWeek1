@@ -6,11 +6,11 @@ import java.util.ArrayList;
  * @author nurulatiqahali
  *
  */
-public class E76ArrayList {
+public class PrintMeal {
 
 	private ArrayList<String> meals;
 
-	public E76ArrayList() {
+	public PrintMeal() {
 		this.meals = new ArrayList<String>();
 
 	}
