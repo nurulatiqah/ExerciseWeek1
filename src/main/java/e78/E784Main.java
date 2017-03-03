@@ -5,7 +5,7 @@ import java.util.Scanner;
  *
  */
 public class E784Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
 		E784BoundedCounter seconds = new E784BoundedCounter(59);
 		E784BoundedCounter minutes = new E784BoundedCounter(59);
@@ -25,6 +25,7 @@ public class E784Main {
 		int i = 0;
 		while (i < 121) {
 			System.out.println(hours + ":" + minutes + ":" + seconds); // the current time
+			Thread.sleep(1000);
 			seconds.next(); // advance minutes
 			if (seconds.getValue() == 0) {
 				minutes.next();
